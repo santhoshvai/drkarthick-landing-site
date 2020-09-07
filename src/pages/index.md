@@ -1,9 +1,9 @@
 ---
 templateKey: index-page
-title: Great coffee with a conscience
-image: /img/home-jumbotron.jpg
+title: Dr. Karthick Vaiyapuri
+image: /img/knee-doctor-e1516145973274-1200x391.jpg
 heading: Great coffee with a conscience
-subheading: Support sustainable farming while enjoying a cup
+subheading: Orthopaedic Specialist
 mainpitch:
   title: Why Kaldi
   description: >
