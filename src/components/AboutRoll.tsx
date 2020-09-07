@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useMemo } from "react";
 import { graphql, StaticQuery, Link } from "gatsby";
 import PreviewCompatibleImage from "./PreviewCompatibleImage";
 
@@ -27,10 +27,16 @@ function AboutRoll(props: AboutRollProps) {
   const { summary, profilepicture } = props.data.markdownRemark.frontmatter;
   const imageStyle = {
     float: "left",
-    "margin-right": "10px",
+    marginRight: "10px",
+    marginBottom: "10px",
     width: "200px",
     overflow: "hidden",
   };
+
+  const nbspUnicodedSummary = useMemo(
+    () => summary.replace(/&nbsp;/g, "\u00a0"),
+    [summary]
+  );
 
   return (
     <div className="column is-12">
@@ -45,8 +51,11 @@ function AboutRoll(props: AboutRollProps) {
             style: imageStyle,
           }}
         />
-        <p className="subtitle is-size-5" style={{ whiteSpace: "pre-wrap" }}>
-          {truncateString(summary, 900)}
+        <p
+          className="is-size-5 has-text-justified"
+          style={{ whiteSpace: "pre-wrap", textAlign: "justify" }}
+        >
+          {truncateString(nbspUnicodedSummary, 900)}
         </p>
         <div className="column is-12 has-text-centered">
           <Link className="button" to="/about">

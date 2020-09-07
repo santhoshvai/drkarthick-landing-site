@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useMemo } from "react";
 import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
@@ -21,13 +21,18 @@ export const AboutPageTemplate = ({
 }: AboutPageTemplateProps) => {
   const PageContent = contentComponent || Content;
 
-  const imageStyle = {
-    //  "border-radius": "70px",
+  const imageStyle: React.CSSProperties = {
     float: "left",
-    "margin-right": "10px",
+    marginRight: "10px",
     width: "200px",
     overflow: "hidden",
+    marginBottom: "10px",
   };
+
+  const nbspUnicodedSummary = useMemo(
+    () => summary.replace(/&nbsp;/g, "\u00a0"),
+    [summary]
+  );
 
   return (
     <section className="section section--gradient">
@@ -46,11 +51,8 @@ export const AboutPageTemplate = ({
                   style: imageStyle,
                 }}
               />
-              <p
-                className="subtitle is-size-5"
-                style={{ whiteSpace: "pre-wrap" }}
-              >
-                {summary}
+              <p className="is-size-5" style={{ whiteSpace: "pre-wrap" }}>
+                {nbspUnicodedSummary}
               </p>
               <PageContent className="content" content={content} />
               <br />

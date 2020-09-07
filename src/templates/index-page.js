@@ -41,8 +41,8 @@ export const IndexPageTemplate = ({
           // backgroundColor: "rgb(255, 68, 0)",
         }}
       >
-        <h3
-          className="has-text-weight-bold is-size-5-mobile is-size-2-tablet is-size-1-widescreen"
+        <h1
+          className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
           style={{
             boxShadow: `${brandColor} 0.5rem 0px 0px, #366273 -0.5rem 0px 0px`,
             backgroundColor: brandColor,
@@ -52,8 +52,8 @@ export const IndexPageTemplate = ({
           }}
         >
           {title}
-        </h3>
-        <h1
+        </h1>
+        <h3
           className="has-text-weight-bold is-size-3-mobile is-size-5-tablet is-size-4-widescreen"
           style={{
             boxShadow: `${brandColor} 0.5rem 0px 0px, #366273 -0.5rem 0px 0px`,
@@ -64,12 +64,12 @@ export const IndexPageTemplate = ({
           }}
         >
           {subheading}
-        </h1>
+        </h3>
       </div>
     </div>
     <section className="section section--gradient">
       <div className="container">
-        <div className="section">
+        <div>
           <div className="columns">
             <div className="column is-10 is-offset-1">
               <div className="content">
@@ -89,9 +89,9 @@ export const IndexPageTemplate = ({
                     <p>{description}</p>
                   </div>
                 </div> */}
-                <div className="column is-12">
-                  <AboutRoll />
-                </div>
+                {/* <div className="column is-12"> */}
+                <AboutRoll />
+                {/* </div> */}
                 {/* <Features gridItems={intro.blurbs} /> */}
                 {/* <div className="columns">
                   <div className="column is-12 has-text-centered">

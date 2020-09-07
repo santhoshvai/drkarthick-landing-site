@@ -59,7 +59,7 @@ function SpecialitiesRoll(props: SpecialitiesRollProps) {
                 </Link>
               </p>
             </header>
-            <p>
+            <div>
               <span className="has-text-black">
                 {post.frontmatter.description}
               </span>
@@ -77,7 +77,7 @@ function SpecialitiesRoll(props: SpecialitiesRollProps) {
               <Link className="button" to={post.fields.slug}>
                 View Details →
               </Link>
-            </p>
+            </div>
           </article>
         </div>
       ))}
