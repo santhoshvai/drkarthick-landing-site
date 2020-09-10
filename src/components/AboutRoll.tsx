@@ -53,7 +53,7 @@ function AboutRoll(props: AboutRollProps) {
         />
         <p
           className="is-size-5 has-text-justified"
-          style={{ whiteSpace: "pre-wrap", textAlign: "justify" }}
+          style={{ whiteSpace: "pre-wrap" }}
         >
           {truncateString(nbspUnicodedSummary, 900)}
         </p>

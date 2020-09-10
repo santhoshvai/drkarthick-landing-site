@@ -51,7 +51,10 @@ export const AboutPageTemplate = ({
                   style: imageStyle,
                 }}
               />
-              <p className="is-size-5" style={{ whiteSpace: "pre-wrap" }}>
+              <p
+                className="is-size-5 has-text-justified"
+                style={{ whiteSpace: "pre-wrap", marginBottom: "8px" }}
+              >
                 {nbspUnicodedSummary}
               </p>
               <PageContent className="content" content={content} />
