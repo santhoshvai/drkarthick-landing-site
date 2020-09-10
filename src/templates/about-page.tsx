@@ -53,7 +53,11 @@ export const AboutPageTemplate = ({
               />
               <p
                 className="is-size-5 has-text-justified"
-                style={{ whiteSpace: "pre-wrap", marginBottom: "8px" }}
+                style={{
+                  whiteSpace: "pre-line",
+                  marginBottom: "8px",
+                  textAlign: "justify",
+                }}
               >
                 {nbspUnicodedSummary}
               </p>
