@@ -1,7 +1,7 @@
-import React from 'react'
+import React from "react";
 
-import Layout from '../../components/Layout'
-import SpecialitiesRoll from '../../components/SpecialitiesRoll'
+import Layout from "../../components/Layout";
+import SpecialitiesRoll from "../../components/SpecialitiesRoll";
 
 export default class BlogIndexPage extends React.Component {
   render() {
@@ -11,15 +11,17 @@ export default class BlogIndexPage extends React.Component {
           className="full-width-image-container margin-top-0"
           style={{
             backgroundImage: `url('/img/knee_inspection.jpg')`,
+            backgroundPosition: "center",
+            backgroundAttachment: `fixed`,
           }}
         >
           <h1
             className="has-text-weight-bold is-size-1"
             style={{
-              boxShadow: '0.5rem 0 0 #366273, -0.5rem 0 0 #366273',
-              backgroundColor: '#366273',
-              color: 'white',
-              padding: '1rem',
+              boxShadow: "0.5rem 0 0 #366273, -0.5rem 0 0 #366273",
+              backgroundColor: "#366273",
+              color: "white",
+              padding: "1rem",
             }}
           >
             Our Specialities
@@ -33,6 +35,6 @@ export default class BlogIndexPage extends React.Component {
           </div>
         </section>
       </Layout>
-    )
+    );
   }
 }
