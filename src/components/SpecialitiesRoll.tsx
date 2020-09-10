@@ -59,25 +59,20 @@ function SpecialitiesRoll(props: SpecialitiesRollProps) {
                 </Link>
               </p>
             </header>
-            <div>
-              <span className="has-text-black">
-                {post.frontmatter.description}
-              </span>
-              <br />
-              <br />
-
-              <div className="columns is-mobile is-multiline">
-                {post.frontmatter.conditions.map((c, index) => (
-                  <div key={c} className="column is-narrow">
-                    <span className="has-text-info-dark nowrap">{`> ${c}`}</span>
-                  </div>
-                ))}
-              </div>
-
-              <Link className="button" to={post.fields.slug}>
-                View Details →
-              </Link>
+            <p className="has-text-black has-text-justified">
+              {post.frontmatter.description}
+            </p>
+            <div className="columns is-mobile is-multiline">
+              {post.frontmatter.conditions.map((c, index) => (
+                <div key={c} className="column is-narrow">
+                  <span className="has-text-info-dark nowrap has-text-weight-bold">{`> ${c}`}</span>
+                </div>
+              ))}
             </div>
+
+            <Link className="button" to={post.fields.slug}>
+              View Details →
+            </Link>
           </article>
         </div>
       ))}
