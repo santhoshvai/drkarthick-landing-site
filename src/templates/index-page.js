@@ -103,9 +103,7 @@ export const IndexPageTemplate = ({
                   </div>
                 </div> */}
                 <div className="column is-12">
-                  <h3 className="has-text-weight-semibold is-size-2">
-                    Our specialities
-                  </h3>
+                  <h3 className="has-text-weight-semibold is-size-2">Skills</h3>
                   <SpecialitiesRoll />
                   {/* <div className="column is-12 has-text-centered">
                     <Link className="btn" to="/specialities">

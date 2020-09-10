@@ -86,7 +86,7 @@ export default () => (
       query SpecialitiesRollQuery {
         allMarkdownRemark(
           sort: { order: ASC, fields: [frontmatter___order] }
-          filter: { frontmatter: { templateKey: { eq: "speciality" } } }
+          filter: { frontmatter: { templateKey: { eq: "skill" } } }
         ) {
           edges {
             node {

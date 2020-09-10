@@ -1,5 +1,5 @@
 ---
-templateKey: speciality
+templateKey: skill
 title: Knee
 order: 2
 featuredimage: /img/knee_pain.jpg

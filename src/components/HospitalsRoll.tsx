@@ -40,13 +40,13 @@ function HospitalsRoll() {
             <div className={`blog-list-item tile is-child box notification`}>
               <img
                 src={"/img/business-black-18dp.svg"}
-                alt="KV"
+                alt={`hospital name: ${title}`}
                 style={{ width: "18px" }}
               />
               <p className="has-text-weight-bold">{title}</p>
               <img
                 src={"/img/place-black-18dp.svg"}
-                alt="KV"
+                alt={`address: ${address}`}
                 style={{ width: "18px" }}
               />
               <p>{address}</p>

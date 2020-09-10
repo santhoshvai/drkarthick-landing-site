@@ -1,5 +1,5 @@
 ---
-templateKey: speciality
+templateKey: skill
 title: General
 order: 1
 featuredimage: /img/general_fracture.jpg
@@ -8,6 +8,7 @@ conditions:
   - Common Fractures
   - Limb Reconstruction
 ---
+
 ![general fracture](/img/general_fracture.jpg)
 
 # Common Fractures
@@ -18,9 +19,9 @@ Morbi eu tristique eros. Morbi nec convallis turpis, at aliquam sapien. Proin si
 
 # Limb Reconstruction
 
-* list item 1
-* list item 2
-* list item 3
+- list item 1
+- list item 2
+- list item 3
 
 Phasellus sodales ante vel purus congue interdum. Mauris finibus sit amet orci in faucibus. Curabitur tincidunt est sem, et varius diam maximus sit amet. Nullam bibendum libero quis rutrum consectetur. Phasellus dui elit, consectetur in euismod dignissim, condimentum hendrerit lectus. Pellentesque cursus mi in nulla pharetra, sit amet bibendum felis hendrerit. Vestibulum accumsan metus ac accumsan rhoncus. Aliquam eleifend viverra nulla, vel pharetra sapien posuere eu. Proin congue nibh eget commodo varius. Pellentesque a urna ut leo varius auctor eu congue metus.
 
