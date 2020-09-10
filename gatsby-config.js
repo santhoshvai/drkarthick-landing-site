@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: "Dr. Karthick Vaiyapuri",
     description:
-      "Dr. Karthick Vaiyapuri is an Orthopaedic Surgeon in Trichy. Now you can book an appointment online with Dr. Karthick Vaiyapuri",
+      "Dr. Karthick Vaiyapuri is a leading Orthopaedic Surgeon in Trichy.",
   },
   plugins: [
     "gatsby-plugin-react-helmet",

@@ -7,6 +7,7 @@ import Features from "../components/Features";
 import BlogRoll from "../components/BlogRoll";
 import SpecialitiesRoll from "../components/SpecialitiesRoll";
 import AboutRoll from "../components/AboutRoll";
+import HospitalsRoll from "../components/HospitalsRoll";
 
 const brandColor = "#366273";
 
@@ -90,6 +91,7 @@ export const IndexPageTemplate = ({
                   </div>
                 </div> */}
                 {/* <div className="column is-12"> */}
+                <HospitalsRoll />
                 <AboutRoll />
                 {/* </div> */}
                 {/* <Features gridItems={intro.blurbs} /> */}
