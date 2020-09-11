@@ -4,6 +4,7 @@ import SpecialitiesRoll from "../../components/SpecialitiesRoll";
 import { useStaticQuery, graphql } from "gatsby";
 import HeaderImage from "../../components/HeaderImage";
 
+// used https://jsfiddle.net/oskar/3479gj9e/ to extract colors from images
 function SkillsIndex() {
   const data = useStaticQuery(graphql`
     query imageQuery {
@@ -21,6 +22,7 @@ function SkillsIndex() {
       <HeaderImage
         fliudImage={data.file.childImageSharp.fluid}
         heading="Skills"
+        textBackgroundColor="rgb(41, 64, 77)"
       />
       <section className="section">
         <div className="container">

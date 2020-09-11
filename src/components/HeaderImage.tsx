@@ -5,11 +5,18 @@ type Props = {
   fliudImage: FluidObject | FluidObject[];
   heading: string;
   subheading?: string;
+  textBackgroundColor?: string;
 };
 
 const BRAND_COLOR = "#366273";
 
-function HeaderImage({ fliudImage, heading, subheading }: Props) {
+function HeaderImage({
+  fliudImage,
+  heading,
+  subheading,
+  textBackgroundColor,
+}: Props) {
+  const _textBackgroundColor = textBackgroundColor || BRAND_COLOR;
   return (
     <>
       <Img
@@ -34,8 +41,8 @@ function HeaderImage({ fliudImage, heading, subheading }: Props) {
         <h1
           className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-desktop"
           style={{
-            boxShadow: `${BRAND_COLOR} 0.5rem 0px 0px, #366273 -0.5rem 0px 0px`,
-            backgroundColor: BRAND_COLOR,
+            boxShadow: `${_textBackgroundColor} 0.5rem 0px 0px, ${_textBackgroundColor} -0.5rem 0px 0px`,
+            backgroundColor: _textBackgroundColor,
             color: "white",
             lineHeight: "1",
             padding: "0.25em",
@@ -47,8 +54,8 @@ function HeaderImage({ fliudImage, heading, subheading }: Props) {
           <h3
             className="has-text-weight-bold is-size-4-touch is-size-3-desktop"
             style={{
-              boxShadow: `${BRAND_COLOR} 0.5rem 0px 0px, #366273 -0.5rem 0px 0px`,
-              backgroundColor: BRAND_COLOR,
+              boxShadow: `${_textBackgroundColor} 0.5rem 0px 0px, ${_textBackgroundColor} -0.5rem 0px 0px`,
+              backgroundColor: _textBackgroundColor,
               color: "white",
               lineHeight: "1",
               padding: "0.25em",

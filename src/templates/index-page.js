@@ -24,6 +24,7 @@ export const IndexPageTemplate = ({
       fliudImage={image.childImageSharp.fluid}
       heading={title}
       subheading={subheading}
+      textBackgroundColor="rgb(54, 99, 124)"
     />
     {/* <div
       className="full-width-image margin-top-0"
