@@ -10,7 +10,7 @@ function SkillsIndex() {
     query imageQuery {
       file(relativePath: { eq: "knee_inspection.jpg" }) {
         childImageSharp {
-          fluid {
+          fluid(maxWidth: 3080, quality: 100) {
             ...GatsbyImageSharpFluid_withWebp
           }
         }
