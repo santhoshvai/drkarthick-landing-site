@@ -1,7 +1,7 @@
 ---
 templateKey: "about-page"
 path: /about
-profilepicture: /img/karthick_profile.jpg
+profilepicture: /img/KO7A7127.jpg
 title: About Dr. Karthick Vaiyapuri
 summary: |
   Dr.&nbsp;Karthick&nbsp;Vaiyapuri, one of the leading Joint Replacement Surgeons practicing in Trichy, boasting of several Fellowships and experience garnered internationally as well as in India. He completed his MBBS and M.S. (Ortho) with GOLD medals for topping the university in both the courses. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus commodo quis dui ac pretium.

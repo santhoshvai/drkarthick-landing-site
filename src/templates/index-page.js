@@ -8,8 +8,7 @@ import BlogRoll from "../components/BlogRoll";
 import SpecialitiesRoll from "../components/SpecialitiesRoll";
 import AboutRoll from "../components/AboutRoll";
 import HospitalsRoll from "../components/HospitalsRoll";
-
-const brandColor = "#366273";
+import HeaderImage from "../components/HeaderImage";
 
 export const IndexPageTemplate = ({
   image,
@@ -20,8 +19,13 @@ export const IndexPageTemplate = ({
   description,
   intro,
 }) => (
-  <div>
-    <div
+  <>
+    <HeaderImage
+      fliudImage={image.childImageSharp.fluid}
+      heading={title}
+      subheading={subheading}
+    />
+    {/* <div
       className="full-width-image margin-top-0"
       style={{
         backgroundImage: `url(${
@@ -67,7 +71,7 @@ export const IndexPageTemplate = ({
           {subheading}
         </h3>
       </div>
-    </div>
+    </div> */}
     <section className="section section--gradient">
       <div className="container">
         <div>
@@ -117,7 +121,7 @@ export const IndexPageTemplate = ({
         </div>
       </div>
     </section>
-  </div>
+  </>
 );
 
 IndexPageTemplate.propTypes = {
@@ -167,8 +171,8 @@ export const pageQuery = graphql`
         title
         image {
           childImageSharp {
-            fluid(maxWidth: 2048, quality: 100) {
-              ...GatsbyImageSharpFluid
+            fluid {
+              ...GatsbyImageSharpFluid_withWebp
             }
           }
         }

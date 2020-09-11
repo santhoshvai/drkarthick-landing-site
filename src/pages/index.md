@@ -2,7 +2,7 @@
 templateKey: index-page
 title: Dr. Karthick Vaiyapuri
 description: Dr. Karthick Vaiyapuri is a leading Orthopaedic Surgeon in Trichy.
-image: /img/knee-doctor-e1516145973274-1200x391.jpg
+image: /img/KO7A7119.jpg
 heading: Great coffee with a conscience
 subheading: Orthopaedic Specialist
 mainpitch:
